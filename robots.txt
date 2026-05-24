@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diversgambit.com/sitemap.xml
