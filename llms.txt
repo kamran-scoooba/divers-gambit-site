@@ -6,7 +6,7 @@
 - [Home](https://diversgambit.com/): Overview of the specialty and the diving skills the game trains.
 - [The Course](https://diversgambit.com/course.html): Standards, prerequisites, the three open-water dives, and continuing-education pathways.
 - [The Game](https://diversgambit.com/rules.html): Full rules - objective and end conditions, the 60-second move clock, scoring by material and remaining air, fouls, the hand-signal system, the slate layout, variants, and tournament format.
-- [Enquire](https://diversgambit.com/contact.html): Contact form for course dates, locations, and prerequisites.
+- [Contact](https://diversgambit.com/contact.html): Contact form for course dates, locations, and prerequisites.
 
 ## Key facts
 - Prerequisite: PADI Advanced Open Water Diver or Peak Performance Buoyancy Specialty.
