@@ -119,6 +119,16 @@ p{margin:0}
 .site-nav nav a.cta{background:var(--brass);color:#1c1405;opacity:1;
   border:1px solid var(--brass-bright);box-shadow:0 8px 22px -12px rgba(202,164,92,.8)}
 .site-nav nav a.cta:hover{background:var(--brass-bright)}
+/* Mobile menu button — hidden by default; only the html.js + ≤620px block below
+   reveals it, so with JS off the button never shows and the wrapped nav row stands. */
+.nav-toggle{display:none;background:none;border:0;padding:6px;margin:-6px -6px -6px 0;
+  color:var(--ivory);cursor:pointer;line-height:0;-webkit-tap-highlight-color:transparent}
+.nav-toggle svg{display:block;width:24px;height:24px}
+.nav-toggle svg line{stroke:currentColor;stroke-width:2;stroke-linecap:round;
+  transform-box:fill-box;transform-origin:center;transition:transform .25s ease, opacity .2s ease}
+.nav-toggle[aria-expanded="true"] svg line:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] svg line:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] svg line:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
 /* ===================== BUTTONS ===================== */
 .btn{display:inline-flex;align-items:center;gap:9px;cursor:pointer;
@@ -307,6 +317,27 @@ p{margin:0}
   .logo{font-size:20px}
   .facts .f{flex:1 1 45%;padding-right:14px}
   .king{opacity:.1}
+
+  /* ---- mobile nav (progressive enhancement) ----
+     Gated entirely on html.js: JS off → none of this applies, the button stays
+     hidden, and the nav falls back to the wrapped row above. JS on, ≤620px →
+     links collapse behind the hamburger into a full-width panel below the bar. */
+  html.js .nav-toggle{display:inline-flex}
+  html.js .site-nav nav{
+    display:none;
+    position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:0;
+    padding:6px 0;
+    background:var(--abyss);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 14px 28px rgba(0,0,0,.45);
+  }
+  html.js .site-nav nav.open{display:flex}
+  html.js .site-nav nav a{padding:14px 22px;font-size:15px;border-radius:0;opacity:.9}
+  html.js .site-nav nav a+a{border-top:1px solid var(--line)}
+  html.js .site-nav nav a.cta{background:none;color:var(--brass-bright);border:0;box-shadow:none}
+  html.js .site-nav nav a.cta:hover{background:rgba(243,237,221,.06)}
 }
 
 @media(prefers-reduced-motion:reduce){
