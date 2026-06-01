@@ -1,0 +1,3 @@
+# Block dev/notes files Netlify would otherwise serve from the repo root.
+# Forced (!) so the rule wins even when a real file exists at this path.
+/CLAUDE.md  /  301!
