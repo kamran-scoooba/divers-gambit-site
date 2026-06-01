@@ -104,7 +104,7 @@ Diver's Gambit is an **already-approved PADI Distinctive Specialty**.
 - Minimum age 12. Depth 6–12 m / 20–40 ft. Three open-water dives, ~9–10 hours.
 - Buddy teams play standard chess over a weighted board; communication by slate and
   hand signals only; roles "Thinker" and "Mover".
-- 60-second moves; 15-minute match cap; min cylinder fill 1500 PSI.
-- A match ends at checkmate or stalemate, **or** when any diver reaches a 500 PSI
+- 60-second moves; 15-minute match cap; min cylinder fill 2000 PSI (~138 bar).
+- A match ends at checkmate or stalemate, **or** when any diver reaches a 1000 PSI (~69 bar)
   reserve (counts as a loss). Tiebreak: material (P1 / N3 / B3 / R5 / Q9) + remaining air.
 - Certification counts as one of five specialties toward PADI Master Scuba Diver.
