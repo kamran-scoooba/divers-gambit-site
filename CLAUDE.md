@@ -23,6 +23,15 @@ but deliberately has its own visual identity — do not converge the two.
   or rename a page. Canonical URLs in those files use `https://diversgambit.com`.
 - **Favicon links live in every page's `<head>`**, immediately after the
   `<meta name="theme-color">` line. If you add a page, copy that 5-line block.
+- **Self-referencing canonical on every indexable page**, on the line right after
+  `<meta name="theme-color">`. Home points at `https://diversgambit.com/` (bare,
+  not `/index.html`); other pages at their own `.html` URL. This collapses the
+  pretty-URL (`/course`) and `.html` (`/course.html`) forms into one indexed page.
+  `thanks.html` is `noindex` and has none.
+- **Netlify `_redirects` at the repo root** force-blocks `/CLAUDE.md` (`301 → /`).
+  The `!` on the rule is required — without it the real file would still serve.
+  Don't delete `_redirects`; it's the only thing keeping the operating notes off
+  the public site.
 
 ---
 
@@ -38,6 +47,8 @@ but deliberately has its own visual identity — do not converge the two.
 | `styles.css` | Shared stylesheet for all pages |
 | `favicon.svg` `.ico` `favicon-32.png` `favicon-16.png` `apple-touch-icon.png` | Icons |
 | `robots.txt` `sitemap.xml` `llms.txt` | Crawl / SEO / LLM metadata at root |
+| `_redirects` | Netlify rules — force-blocks `/CLAUDE.md` (301 → home) so notes aren't web-served |
+| `.gitignore` | Excludes local scratch from git |
 
 ---
 
