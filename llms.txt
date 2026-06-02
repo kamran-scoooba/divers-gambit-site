@@ -12,7 +12,7 @@
 - Prerequisite: PADI Advanced Open Water Diver or Peak Performance Buoyancy Specialty.
 - Minimum age 12. Depth 6-12 m / 20-40 ft. Three open-water dives, ~9-10 hours total.
 - Play is in buddy teams over a weighted board; communication by slate and hand signals only.
-- A match ends at checkmate or stalemate, or when any diver reaches a 500 PSI reserve (counts as a loss).
+- A match ends at checkmate or stalemate, or when any diver reaches a 1000 PSI reserve (counts as a loss).
 - Scoring when undecided: material points (P1 N/B3 R5 Q9) plus remaining air.
 
 ## Note
